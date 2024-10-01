@@ -10,7 +10,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
+            justify-content: flex-start;
             background-color: #f5f5f5;
             height: 100vh;
             margin: 0;
@@ -18,13 +18,15 @@
 
         h1 {
             text-align: center;
+            margin-top: 40px; /* 위에 빈 공간 추가 */
             margin-bottom: 20px;
+            width: 100%;
+            font-size: 24px;
         }
 
         a {
             color: inherit;
             text-decoration: none;
-            font-size: 24px;
         }
 
         .container {
@@ -36,7 +38,7 @@
         }
 
         .postit {
-            background-color: #fff9c6;
+            background-color: #ffeb3b;
             padding: 15px;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -56,12 +58,16 @@
             .container {
                 grid-template-columns: 1fr;
             }
+
+            h1 {
+                font-size: 20px; /* 모바일 화면에서 텍스트 크기 조정 */
+            }
         }
     </style>
 </head>
 <body>
-<br><br>
-<h3><a href="sms:01059200184">성남시에 민원문자 보내기 010-5920-0184</a></h3>
+
+<h1><a href="sms:01059200184">[클릭] 성남시 민원 문자 보내기 010-5920-0184</a></h1>
 
 <div class="container">
     <div class="postit" data-content="학교앞 50m 사이비 종교가 왠말인가? 성남시는 건축허가시 아이들의 학습권은 생각을 하지 않는 것인지? 중앙동 3003번지에 하나님의교회 건축 중단 및 즉시 허가 취소하시기 바랍니다.">학교앞 50m 사이비 종교가 왠말인가? 성남시는 건축허가시 아이들의 학습권은 생각을 하지 않는 것인지? 중앙동 3003번지에 하나님의교회 건축 중단 및 즉시 허가 취소하시기 바랍니다.</div>
@@ -94,9 +100,9 @@
 
     function copyToClipboard(text) {
         navigator.clipboard.writeText(text).then(() => {
-            alert('민원 문자가 복사되었습니다.');
+            alert('복사되었습니다. : ' + text);
         }).catch(err => {
-            console.error('민원 문자 복사에 실패했습니다.', err);
+            console.error('복사에 실패했습니다.', err);
         });
     }
 </script>
