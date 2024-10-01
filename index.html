@@ -67,7 +67,7 @@
 </head>
 <body>
 
-<h1><a href="sms:01059200184">[더블클릭] 성남시 민원 문자 보내기 010-5920-0184</a></h1>
+<h1><a href="sms:01059200184">[더블클릭] 성남시 민원 문자 010-5920-0184</a></h1>
 
 <div class="container" id="postit-container">
     <div class="postit" data-content="학교앞 50m 사이비 종교가 왠말인가? 성남시는 건축허가시 아이들의 학습권은 생각을 하지 않는 것인지? 중앙동 3003번지에 하나님의교회 건축 중단 및 즉시 허가 취소하시기 바랍니다."></div>
@@ -90,26 +90,24 @@
         const content = postit.getAttribute('data-content');
         postit.innerHTML = content; // 화면에 내용 표시
 
+        // 클릭 시 클립보드에 복사
+        postit.addEventListener('click', function () {
+            copyToClipboard(content);
+        });
+
+        // 더블클릭 또는 롱클릭 시 모바일에서 SMS 전송
         postit.addEventListener('dblclick', function () {
             if (isMobile()) {
-                // 모바일에서 SMS 앱을 여는 코드
                 const smsLink = `sms:01059200184?&body=${encodeURIComponent(content)}`;
                 window.location.href = smsLink;
-            } else {
-                // 모바일이 아닐 경우 클립보드에 복사
-                copyToClipboard(content);
             }
         });
 
         postit.addEventListener('touchstart', function (e) {
             this.longPressTimer = setTimeout(() => {
                 if (isMobile()) {
-                    // 모바일에서 SMS 앱을 여는 코드
                     const smsLink = `sms:01059200184?&body=${encodeURIComponent(content)}`;
                     window.location.href = smsLink;
-                } else {
-                    // 모바일이 아닐 경우 클립보드에 복사
-                    copyToClipboard(content);
                 }
             }, 800);
         });
