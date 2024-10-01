@@ -18,7 +18,7 @@
 
         h1 {
             text-align: center;
-            margin-top: 40px; /* 위에 빈 공간 추가 */
+            margin-top: 40px;
             margin-bottom: 20px;
             width: 100%;
             font-size: 24px;
@@ -60,7 +60,7 @@
             }
 
             h1 {
-                font-size: 20px; /* 모바일 화면에서 텍스트 크기 조정 */
+                font-size: 20px;
             }
         }
     </style>
@@ -69,17 +69,33 @@
 
 <h1><a href="sms:01059200184">[클릭] 성남시 민원 문자 보내기 010-5920-0184</a></h1>
 
-<div class="container">
-    <div class="postit" data-content="학교앞 50m 사이비 종교가 왠말인가? 성남시는 건축허가시 아이들의 학습권은 생각을 하지 않는 것인지? 중앙동 3003번지에 하나님의교회 건축 중단 및 즉시 허가 취소하시기 바랍니다.">학교앞 50m 사이비 종교가 왠말인가? 성남시는 건축허가시 아이들의 학습권은 생각을 하지 않는 것인지? 중앙동 3003번지에 하나님의교회 건축 중단 및 즉시 허가 취소하시기 바랍니다.</div>
-    <div class="postit" data-content="주차장수 15면이 왠말인가? 광명로는 교통 지옥이 될 겁니다 교통 혼잡과 교통 안전 문제로 중앙동 3003번지 하나님의교회 건축 중단 및 즉각적인 허가 취소를 바랍니다.">주차장수 15면이 왠말인가? 광명로는 교통 지옥이 될 겁니다 교통 혼잡과 교통 안전 문제로 중앙동 3003번지 하나님의교회 건축 중단 및 즉각적인 허가 취소를 바랍니다.</div>
-    <div class="postit" data-content="중앙동 3003번지에 사회혼란과 가정파괴를 유발하는 하나님의교회를 막아주세요.">중앙동 3003번지에 사회혼란과 가정파괴를 유발하는 하나님의교회를 막아주세요.</div>
-    <div class="postit" data-content="지역 주민과의 하나님의 교회 신도 사이에 극심한 마찰 발생 및 지역 사회 갈등이 예상됩니다. 9시 뉴스에 매번 나오게 할겁니까? 중앙동 3003번지 하나님의교회 건축 허가 당장 취소하세요.">지역 주민과의 하나님의 교회 신도 사이에 극심한 마찰 발생 및 지역 사회 갈등이 예상됩니다. 9시 뉴스에 매번 나오게 할겁니까? 중앙동 3003번지 하나님의교회 건축 허가 당장 취소하세요.</div>
-    <div class="postit" data-content="아이를 가진 엄마라면, 상식을 가진 사람이라면 학교 앞 50m에, 아파트 단지 한가운데에 하나님의교회를 건축허가할 수 없습니다. 중앙동 3003번지 하나님의교회 즉각 취소하고 고소/고발 조치 바랍니다.">아이를 가진 엄마라면, 상식을 가진 사람이라면 학교 앞 50m에, 아파트 단지 한가운데에 하나님의교회를 건축허가할 수 없습니다. 중앙동 3003번지 하나님의교회 즉각 취소하고 고소/고발 조치 바랍니다.</div>
-    <div class="postit" data-content="성남시는 본도심의 도시재생은 포기하였는가? 지역 슬럼화를 야기하는 중앙동 3003번지 하나님의교회 즉각 취소하라.">성남시는 본도심의 도시재생은 포기하였는가? 지역 슬럼화를 야기하는 중앙동 3003번지 하나님의교회 즉각 취소하라.</div>
-    <div class="postit" data-content="성남시는 헌법위에 있습니까? 지역주민들의 재산권을 침해하는 중앙동 3003번지 하나님의교회 건축허가 즉각 취소 바랍니다.">성남시는 헌법위에 있습니까? 지역주민들의 재산권을 침해하는 중앙동 3003번지 하나님의교회 건축허가 즉각 취소 바랍니다.</div>
+<div class="container" id="postit-container">
+    <div class="postit" data-content="학교앞 50m 사이비 종교가 왠말인가? 성남시는 건축허가시 아이들의 학습권은 생각을 하지 않는 것인지? 중앙동 3003번지에 하나님의교회 건축 중단 및 즉시 허가 취소하시기 바랍니다."></div>
+    <div class="postit" data-content="주차장수 15면이 왠말인가? 광명로는 교통 지옥이 될 겁니다 교통 혼잡과 교통 안전 문제로 중앙동 3003번지 하나님의교회 건축 중단 및 즉각적인 허가 취소를 바랍니다."></div>
+    <div class="postit" data-content="중앙동 3003번지에 사회혼란과 가정파괴를 유발하는 하나님의교회를 막아주세요."></div>
+    <div class="postit" data-content="지역 주민과의 하나님의 교회 신도 사이에 극심한 마찰 발생 및 지역 사회 갈등이 예상됩니다. 9시 뉴스에 매번 나오게 할겁니까? 중앙동 3003번지 하나님의교회 건축 허가 당장 취소하세요."></div>
+    <div class="postit" data-content="아이를 가진 엄마라면, 상식을 가진 사람이라면 학교 앞 50m에, 아파트 단지 한가운데에 하나님의교회를 건축허가할 수 없습니다. 중앙동 3003번지 하나님의교회 즉각 취소하고 고소/고발 조치 바랍니다."></div>
+    <div class="postit" data-content="성남시는 본도심의 도시재생은 포기하였는가? 지역 슬럼화를 야기하는 중앙동 3003번지 하나님의교회 즉각 취소하라."></div>
+    <div class="postit" data-content="성남시는 헌법위에 있습니까? 지역주민들의 재산권을 침해하는 중앙동 3003번지 하나님의교회 건축허가 즉각 취소 바랍니다."></div>
 </div>
 
 <script>
+    // 화면에 포스트잇 내용 표시 및 동일 내용 복사 기능 유지
+    document.querySelectorAll('.postit').forEach(postit => {
+        const content = postit.getAttribute('data-content');
+        postit.innerHTML = content; // 화면에 내용 표시
+    });
+
+    // 포스트잇 순서를 랜덤으로 섞기
+    window.onload = function() {
+        const container = document.getElementById('postit-container');
+        const postits = Array.from(container.children);
+        const shuffled = postits.sort(() => Math.random() - 0.5); // 랜덤으로 섞기
+        container.innerHTML = ''; // 기존 요소들 제거
+        shuffled.forEach(postit => container.appendChild(postit)); // 섞인 순서로 재배치
+    };
+
+    // 복사 기능
     document.querySelectorAll('.postit').forEach(postit => {
         postit.addEventListener('dblclick', function () {
             const text = this.getAttribute('data-content');
