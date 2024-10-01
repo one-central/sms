@@ -128,7 +128,7 @@
 
     function copyToClipboard(text) {
         navigator.clipboard.writeText(text).then(() => {
-            alert('복사되었습니다. : ' + text);
+            //alert('복사되었습니다. : ' + text);
         }).catch(err => {
             console.error('복사에 실패했습니다.', err);
         });
